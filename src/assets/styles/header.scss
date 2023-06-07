@@ -1,4 +1,6 @@
 header{
+    position: relative;
+    z-index: 2;
     .header_container{
         display: flex;
         .header_logo-container{
@@ -95,7 +97,7 @@ header{
                         border: none;
                         outline: none;
                         padding-left: 12px;
-                        width: 891px;
+                        width: 903px;
                         box-sizing: border-box;
                         font-size: 16px;
                         font-family: $baseFont;
@@ -123,6 +125,77 @@ header{
     
             }
 
+        }
+        .header_contacts-container{
+            margin-top: 24px;
+            margin-left: 46px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            .header_number{
+                display: flex;
+                align-items: center;
+                svg{
+                    width: 24px;
+                    height: 24px;
+                }
+                p{
+                    line-height: 32px;
+                    margin-left: 10px;
+                    color: #B5B5B5;
+                    font-size: 24px;
+                    font-family: $secondaryFont;
+                }
+            }
+            .header_routes-wrap{
+                margin-top: 23px;
+                font-family: $baseFont;
+                ul{
+                    display: flex;
+                    grid-gap: 52px;
+                    li{
+                        // width: 86px;
+                        a{
+                            div{
+                                position: relative;
+                                display: flex;
+                                flex-direction: column;
+                                svg{
+                                    margin: 0 auto;
+                                    // width: 24px;
+                                    // height: 27px;
+                                }
+                                p{
+                                    margin-top: 8px;
+                                    font-size: 14px;
+                                }
+                                span{
+                                    background: $blue;
+                                    text-transform: uppercase;
+                                    font-size: 10px;
+                                    font-family: $baseFont;
+                                    line-height: 12px;
+                                    padding: 3.5px 6px;
+                                    width: fit-content;
+                                    border-radius: 100px;
+                                    font-weight: bold;
+                                    left: 23px;
+                                    position: absolute;
+                                    right: 0;
+                                    margin: auto;
+                                    top:-2px;
+                                    // bottom: 0;
+                                    line-height: 12px;
+                                    color: white;
+                                    
+                                }
+                            }
+                            text-decoration: none;
+                            color: #B5B5B5;
+                        }
+                    }
+                }
+            }
         }
 
     }

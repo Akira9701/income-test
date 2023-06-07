@@ -1,0 +1,135 @@
+.safety{
+    padding-top: 159px;
+    background: $blue;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .safety_data-list_container{
+        margin-left: 149px;
+
+        h2{
+            font-size: 48px;
+            font-family: $secondaryFont;
+            line-height: 64.8px;
+            color: #F8F8F9;
+            width: fit-content;
+            width: 908px;
+            span{
+                font-weight: 700;
+            }
+        }
+        ul{
+            margin-top: 108px;
+            
+            li{
+                margin-top: 40px;
+                display: flex;
+                .safety_data-list_item-text{
+                    margin-left: 26px;
+                    margin-top: 12px;
+                    color: #F8F8F9;
+                    font-family: $baseFont;
+                    width: 500px;
+                    .safety_data-list_item-text_title{
+                        font-weight: 700;
+                        font-size: 19px;
+                        text-transform: uppercase;
+                    }
+                    .safety_data-list_item-text_desc{
+                        margin-top: 21px;
+                        line-height: 24.22px;
+                    }
+                }
+                img{
+                    width: 75px;
+                    height: 125px;
+                    transform: scale(-1, 1);
+                    filter: drop-shadow(-18px 19px 29px rgba(0, 0, 0, 0.25));
+                    transform: matrix(-1, 0, 0, 1, 0, 0);
+                }
+            }
+            li:first-child{
+                margin-top: 0px;
+            }
+            li:last-child{
+                .safety_data-list_item-text{
+                    width: 750px;
+                }
+            }
+        }
+    }
+    .safety_info{
+        width: 560px;
+        p{
+            color: #F8F8F9;
+            font-family: $baseFont;
+            font-size: 21px;
+            line-height: 25.6px;
+            span{
+                font-weight: 700;
+            }
+        }
+        .safety_video{
+            margin-top: 58px;
+            width: 560px;
+            height: 501px;
+            position: relative;
+            overflow: hidden;
+            img{
+                // max-width: 100%;
+                height: 100%;
+            }
+            
+            .safety_video_controller-wrap{
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p{
+                    margin-left: 32px;
+                    width: 240px;
+                    color: white;
+                    font-family: $baseFont;
+                    font-size: 17px;
+                    font-weight: 900;
+                }
+            }
+
+            .safety_video_controller-btn{
+                cursor: pointer;
+                width: 143px;
+                height: 143px;
+                background: #FF7934                ;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg{
+                    width: 46px;
+                    height: 46px;
+                }
+            }
+        }
+    }
+    >img{
+        width: 306px;
+        height: 525px;
+        position: absolute;
+        top: 106px;
+        margin:  auto;
+        left: 135px;
+        right: 0;
+
+    }
+}
+
+.safety::after{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 900px;
+    background: $blue;
+    position: absolute;
+    top: 0;
+    right: -900px;
+}

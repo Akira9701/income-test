@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "../fonts/stylesheet.css";
 
-$green: #16D761;
+$green: #0D7D0A;
 $gray: #F8F8F9;
+$blue: #2467B3;
 
 
 $baseFont: 'Montserrat';
+$secondaryFont:  'TT Lakes';
 
 
-section, header, footer{
-    max-width: 1723px;
-    padding: 0 100px;
+header, footer{
+    max-width: 1753px;    // padding: 0 68px 0 100px;
+    margin: 0 auto;
+}
+
+section, footer{
+    max-width: 1723px;    // padding: 0 68px 0 100px;
     margin: 0 auto;
 }
 

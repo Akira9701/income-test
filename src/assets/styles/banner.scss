@@ -1,0 +1,96 @@
+.banner{
+    // z-index: 2;
+    margin-top: 177px;
+    position: relative;
+    padding-bottom: 291px;
+    .banner_breadcrumbs{
+        font-size: 12px;
+        font-family: $baseFont;
+        a{
+            text-decoration: none;
+            color: $blue;
+        }
+        span{
+            margin: 0 21px;
+        }
+    }
+    .banner_title{
+        margin-top: 35px;
+        color: white;
+        h1{
+            font-family: $secondaryFont;
+
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 70.2px;
+            color: white;
+            font-size:52px ;
+
+            span{
+                color: #83C1F3;
+                font-style: italic;
+            }
+        }
+        >p{
+            margin-top: 34px;
+            width: 592px;
+            font-family: $baseFont;
+            line-height: 34.2px;
+            font-size: 20px;
+            font-weight: 400;
+            span{
+                font-weight: 700;
+            }
+        }
+        .babber_callback-wrap{
+            margin-top: 46px;
+            display: flex;
+            p{
+                font-family: $baseFont;
+                line-height: 40px;
+                font-size: 30px;
+                span{
+                    font-weight: 600;
+                    color: #16D761
+                    ;
+                }
+            }
+            button{
+                margin-top: 10px;
+                margin-left: 33px;
+                border: 0;
+                width: 267px;
+                height: 64px;
+                background: $green;
+                color: white;
+                font-size: 16px;
+                font-weight: 700;
+                font-family: $baseFont;
+                cursor: pointer;
+                
+            }
+        }
+    }
+}
+
+.banner_balon{
+    position: absolute;
+    right: 75px;
+    bottom: -116px;
+}
+
+.banner-bg{
+    position: relative;
+    overflow: hidden;
+    // background: url('/banner-bg.png');
+    >img{
+        // max-width: 100%;
+        z-index: 0;
+        position: absolute;
+        top: -90px;
+        left: -141px;
+        // left: -140px;
+        width: 2229px;
+
+    }
+}
